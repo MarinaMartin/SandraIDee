@@ -27,7 +27,7 @@ You can build upon this to generate any sort of custom text response, but I alwa
        e.g.
        heroku config:add twiliosid=srxcvbuijnonmk twiliotoken=eysdutyifvuygi twiliofrom=12025555555
        
-6. Create send_sems_controller.rb in app/controllers with the following:
+6. Create send_sms_controller.rb in app/controllers with the following:
 
         class SendSmsController < ApplicationController
   
