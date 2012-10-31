@@ -6,10 +6,10 @@ class SendSmsController < ApplicationController
 
       SMSLogger.log_text_message from_number, message_body
       
-      client = Twilio::REST::Client.new(TWILIO_CONFIG['sid'], TWILIO_CONFIG['token'])
+      client = Twilio::REST::Client.new(ENV['twiliosid'], ENV['twiliotoken'])
 
       client.account.sms.messages.create(
-        :from => TWILIO_CONFIG['from'],
+        :from => ENV['twiliofrom'],
         :to => from_number,
         :body => "Message body"
       )
