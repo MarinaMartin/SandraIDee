@@ -1,8 +1,10 @@
 == Welcome to Rails
 
 This app is intended to work as follows:
-  - Text an ID
-  - Receive a text response indicating if that ID is approved or denied (with additional info)
+  - You text anything to a number
+  - Receive a text response you specify
+
+You can build upon this to generate any sort of custom text response, but I always forget my basics, so hopefully this helps to jog others' memories!
   
 == Preliminaries
 
